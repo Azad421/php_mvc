@@ -1,0 +1,10 @@
+{
+  "name": "frame/phpcore",
+  "authors": [
+    {
+      "name": "Azad421",
+      "email": "azadkh92558@gmail.com"
+    }
+  ],
+  "require": {}
+}
