@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace mvcapp\framework;
 
-use app\core\exception\NotFoundException;
+use mvcapp\framework\exception\NotFoundException;
 
 class Router
 {
@@ -10,8 +10,8 @@ class Router
     public Response $response;
     protected array $routes = [];
     /**
-     *   @param \app\core\Request $request;
-     *   @param \app\core\Response $response;
+     *   @param \mvcapp\framework\Request $request;
+     *   @param \mvcapp\framework\Response $response;
      * 
      */
     public function __construct(Request $request, Response $response)
@@ -46,7 +46,7 @@ class Router
         }
 
         if (is_array($callback)) {
-            /** @var \app\core\Controller $controller */
+            /** @var \mvcapp\framework\Controller $controller */
             $controller = new $callback[0]();
             Application::$app->controller = $controller;
             $controller->action = $callback[1];

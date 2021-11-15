@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core\db;
+namespace mvcapp\framework\db;
 
-use app\core\Application;
+use mvcapp\framework\Application;
 use PDO;
 
 class Database

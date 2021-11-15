@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core;
+namespace mvcapp\framework;
 
-use app\core\db\Database;
-use app\core\db\DbModel;
+use mvcapp\framework\db\Database;
+use mvcapp\framework\db\DbModel;
 
 class Application
 {
@@ -56,13 +56,13 @@ class Application
         }
     }
 
-    public function getController(): \app\core\Controller
+    public function getController(): \mvcapp\framework\Controller
     {
         return $this->controller;
     }
 
 
-    public function setController(\app\core\Controller $controller): void
+    public function setController(\mvcapp\framework\Controller $controller): void
     {
         $this->controller = $controller;
     }

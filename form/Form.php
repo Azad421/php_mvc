@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core\form;
+namespace mvcapp\framework\form;
 
-use app\core\form\InputField;
-use app\core\Model;
+use mvcapp\framework\form\InputField;
+use mvcapp\framework\Model;
 
 class Form
 {

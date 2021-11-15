@@ -1,15 +1,15 @@
 <?php
 
-namespace app\core;
+namespace mvcapp\framework;
 
-use app\core\middlewares\BaseMiddleware;
+use mvcapp\framework\middlewares\BaseMiddleware;
 
 class Controller
 {
     public string $layout = 'main';
     public string $action = '';
     /**
-     * @var \app\core\middlewares\BaseMiddleware[]
+     * @var \mvcapp\framework\middlewares\BaseMiddleware[]
      */
     protected array $middlewares = [];
 
@@ -29,7 +29,7 @@ class Controller
     /**
      * Get the value of middlewares
      *
-     * @return  \app\core\middlewares\BaseMiddleware[]
+     * @return  \mvcapp\framework\middlewares\BaseMiddleware[]
      */
     public function getMiddlewares()
     {

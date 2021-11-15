@@ -6,5 +6,10 @@
       "email": "azadkh92558@gmail.com"
     }
   ],
-  "require": {}
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "mvcapp\\framework": "."
+    }
+  }
 }
